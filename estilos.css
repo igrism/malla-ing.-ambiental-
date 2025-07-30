@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f4f7;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.curso {
+  background-color: white;
+  border-left: 8px solid #00796b;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.curso:hover {
+  transform: scale(1.03);
+  background-color: #e0f2f1;
+}
+
+.curso .nombre {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.curso .creditos {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.curso .prerequisitos {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #00796b;
+  display: none;
+}
+
+.curso.activo .prerequisitos {
+  display: block;
+}
